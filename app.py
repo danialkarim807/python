@@ -9,45 +9,22 @@ import pymongo
 from pymongo import MongoClient
 app = Flask(__name__)
 
-# this is for .env environment veriable
-
-# USERNAME='danialkarim'
-# PASSWORD='!Q@W#E'
-# CLUSTER_URL='project1.vdg7bq8.mongodb.net'
-
-# 999999999999999999999999999999999999999999999999999999999999999999999999
-
-# un = quote_plus(USERNAME)
-# ps = quote_plus(PASSWORD)
-# cl = quote_plus(CLUSTER_URL)
-# client = MongoClient(f"mongodb+srv://{un}:{ps}@project1.vdg7bq8.mongodb.net/test?retryWrites=true&w=majority")
-# db = client.project1
-# print(db.list_collection_names())
-
-# 999999999999999999999999999999999999999999999999999999999999999999999999999
-
-
-# 8888888888888888888888888888888888888888888888888888888
-# username = 'danialkarim'
-# password = '!Q@W#E'
-# cluster_url = 'project1.vdg7bq8.mongodb.net'
-# uri = f"mongodb+srv://{quote_plus(username)}:{quote_plus(password)}@{cluster_url}/test?retryWrites=true&w=majority"
-# 8888888888888888888888888888888888888888888888888888888888
-
-
-
-# 7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-# compass db
-# username='admin'
-# password = ''
-# host ='localhost'
+ 
+ 
 uri = 'mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false'
-
-# db = client['mydatabase']
-# collection = db['mycollection']
-# 777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-
 client = MongoClient(uri)
+
+
+
+
+ 
+# client = MongoClient(host='test_mongodb',
+#                          port=27017, 
+#                          username='root', 
+#                          password='pass',
+#                         authSource="admin")
+
+# client
 
 try:
     # Attempt to connect to the MongoDB database
